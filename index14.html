@@ -1,0 +1,3247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e00699c2feb3469d6fb0ccdd5d6b2e61 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<script>
+window.addEventListener('load', function() {
+    for (var key in window) {
+        if (window[key] instanceof L.Map) {
+            var map = window[key];
+            
+            var groupsData = [
+                
+		{
+			summary: window['marker_eb5d7f945d15cb28bc10defc3e864548'],
+			details: [window['marker_bd639d2279128194743b1925e326e853'], window['marker_986fe3beed885ba42e1964dd412bc4d3'], window['marker_50c331f766d84e17e3d42207003a66fa'], window['marker_18f314cd4754995f254862b73b70cb19'], window['marker_e3da7cc14dfce3690f8099e8c8b67239'], window['marker_0c4c6dc999058bdaa282fbaef3f26b93'], window['marker_468578151150acd96e031f166a77db7e'], window['marker_99fc34ab8a9e217822179dc565a723e5'], window['marker_91c2e4cbc4dec38159a2c91fbc45a597'], window['marker_30b6c44d468e00e350875c7cfce3971e']],
+			targetZoom: 14
+		}
+	,
+
+		{
+			summary: window['marker_a9c8ce9ffda3d3af25b0bcde749881d2'],
+			details: [window['marker_bce0a4f6383824e3918d55bef013ff9a'], window['marker_5962f8a71f28da033fa3b31354ac869b'], window['marker_099692161bee6eea55b08b4ed0db89d3'], window['marker_d8694875cb101419f87551dbfb0d224c'], window['marker_17656819775d6430ef2e15269fcbe97c'], window['marker_10b6cf21725cb3767f29a4ddfb6e847b'], window['marker_c88884e290b0c7f168f8fa7151d7034e'], window['marker_0d7ed36133b917245f934bccd056916f'], window['marker_2e201f9244f09ad09604adbae13a6b71'], window['marker_f9ba16fcad2f62720cdb44be2b4e5550']],
+			targetZoom: 14
+		}
+	,
+
+		{
+			summary: window['marker_53a97d484fc91986a7722430f02cdc87'],
+			details: [window['marker_571ceeb314ee8004bb1d3f481ed68161'], window['marker_d9649740bee36d64f9de965487371297'], window['marker_2dbeed114fa4473f2c1ce93c69be8e28'], window['marker_5dd342c188b2efa49da907c037f5032b'], window['marker_42c8c5303ecc695bd1b3aad18696bed5'], window['marker_9bac376d6533b0396d853424e75f925e'], window['marker_0bab68dbacc147f83d435568f8483bcc'], window['marker_e2a7cfbfc4f99cf60aeac14e022a8d4f'], window['marker_3574b1b068d8124e96b859ed2cd08259'], window['marker_1979b2665fe95a9ffb494a4e17ec501f']],
+			targetZoom: 14
+		}
+	,
+
+		{
+			summary: window['marker_b7915441c54e70f92d3b725915b9abb1'],
+			details: [window['marker_905016f09d61ae5b106ccafc4acaafea'], window['marker_084d0586d05b12b045fe0352054ff55d'], window['marker_89f5027558b428db4ca18cacaf75e167'], window['marker_53ffbb9e279cc33a478d2ade7f028892'], window['marker_bfb1825dc24307467563fb1e67cf0ee8'], window['marker_3097f4507155e0d6726fcd62137d1262'], window['marker_6fd2cd622daf10644b4575ad8a7484aa'], window['marker_021d448afee5cfed6515cee796da27b2'], window['marker_b4229e0145204a5f31c7529095e66898'], window['marker_3f46dfa1196baa43db0cebc0ce8a2fe6'], window['marker_1db6ca015ff352d7e7bbf6ac1e918355'], window['marker_20fd8185fc120a0806d3702d2eb57922'], window['marker_771973c4e5f49def71d00371445d91cf'], window['marker_6cfce782d4e1672070075b94da76d504'], window['marker_62c1347a48ee36db54f1b2606d2f0e1b'], window['marker_7dd606c71c5c1312f1f8b7c425bf6a80'], window['marker_96ff0df63494c973fe6459fbf27cce70'], window['marker_2fc6b48fca52a20b47106645c6720442'], window['marker_4548a3bbade114b597b6f4a4fd091980'], window['marker_532f08360b639932950680db71ce7164'], window['marker_5ecc14641ba3d069a243dcb5b6c97aa4']],
+			targetZoom: 11
+		}
+	,
+
+		{
+			summary: window['marker_26e59891add360244f0101c3155405db'],
+			details: [window['marker_92b6558931bdcd32b65c260702da8b51'], window['marker_c0baf1d4e13fdbe5fbfa2f3bb6d57059'], window['marker_c6e23674f70331bdc5c9900a04c51bae'], window['marker_a047482aaac9ddcfc7871b017a67d9b9'], window['marker_0744131985bc15c1098768080e623e96'], window['marker_edbbf1430b404bf42793f2f1eb5d831e'], window['marker_fcdd6e59496b686d445eeedb2e0a2dff'], window['marker_52b58b1b3d5e559b59b1c592dc58d8b1'], window['marker_d2bcc501f087a26bb5437f6afa9d2d87'], window['marker_04d7dda45048ed6c0c7086d8782238fd']],
+			targetZoom: 14
+		}
+	,
+
+		{
+			summary: window['marker_19ffd4fac9e18770b057d67301ee2680'],
+			details: [window['marker_dda0bdfc365441cbeffc0eb42fc3092f'], window['marker_c9b26651938aab010394b5862a678c08'], window['marker_89979a152e4d80bd62463498d844fa30'], window['marker_983970e9bb3538307adc4b3038bff975'], window['marker_ed758db632d13540c802c7ed9b985443'], window['marker_0cf6bffc59cf61cf56cd477c8c951e43'], window['marker_64053752a7d8f1c8f4356a69643f0994'], window['marker_12b1b11635eaf1c369f577daaa41b957'], window['marker_10fd642a9b4174cac8d214be21583596']],
+			targetZoom: 10
+		}
+	,
+
+		{
+			summary: window['marker_4d7c32681c742b33b0af06faf4cef19c'],
+			details: [window['marker_acbfba04c0cafa8153a8b69c6c2d4dd8'], window['marker_4fb867174df6d4e0ee2d4ef282f5e60a'], window['marker_8c68749a6c176552563b9f1a0b0e578c'], window['marker_599eb3d0030bbc3dc6ec1a616ff1b685']],
+			targetZoom: 16
+		}
+	,
+
+		{
+			summary: window['marker_7dbb670b0d2b5870728ed64867c61bbb'],
+			details: [window['marker_bfdee66190a4271327af212b051c68fd'], window['marker_b9390f688af8c7951d377adb3bf206a5'], window['marker_3abd812b07ed3e63ec2d6fc3823858b7'], window['marker_c77d5bcca0b8f7d9a904cc48ba49be71'], window['marker_05f35390e3dcd9c840f84c89d6b1768b'], window['marker_6fd6fbd0e92eea7b9925330f60b84e0f'], window['marker_1f6a3eaabbabf5d81b79aaf9f4f70b3c'], window['marker_095ab92e80eec373f23ae8563aadaa64'], window['marker_01240fa7ad2d8ddb8061eec64355aec3']],
+			targetZoom: 10
+		}
+	
+            ];
+            
+            groupsData.forEach(function(group) {
+                // Клик по общему маркеру группы
+                group.summary.on('click', function() {
+                    map.setView(group.summary.getLatLng(), group.targetZoom);
+                });
+            });
+            
+            function updateGroupVisibility(group) {
+                var currentZoom = map.getZoom();
+                var showDetails = currentZoom >= group.targetZoom;
+                
+                // Проверяем, добавлена ли вообще группа на карту (включена ли в LayerControl)
+                // Для этого проверим, есть ли хотя бы один элемент группы на карте или проверим родительский слой
+                // Самый простой способ — управлять маркерами напрямую через map.addLayer / map.removeLayer
+                
+                if (showDetails) {
+                    if (map.hasLayer(group.summary)) {
+                        map.removeLayer(group.summary);
+                    }
+                    group.details.forEach(function(marker) {
+                        if (!map.hasLayer(marker)) {
+                            marker.addTo(map);
+                        }
+                    });
+                } else {
+                    group.details.forEach(function(marker) {
+                        if (map.hasLayer(marker)) {
+                            map.removeLayer(marker);
+                        }
+                    });
+                    if (!map.hasLayer(group.summary)) {
+                        group.summary.addTo(map);
+                    }
+                }
+            }
+            
+            function updateAllMarkers() {
+                groupsData.forEach(function(group) {
+                    updateGroupVisibility(group);
+                });
+            }
+            
+            // Следим за изменением масштаба карты
+            map.on('zoomend', updateAllMarkers);
+            
+            // Также пересчитываем при управлении слоями через LayerControl (overlayadd)
+            map.on('overlayadd', function(e) {
+                // Проверяем, относится ли включенный слой к нашим группам, и обновляем их
+                setTimeout(updateAllMarkers, 50);
+            });
+            
+            // Первичный запуск при загрузке
+            updateAllMarkers();
+            
+            break;
+        }
+    }
+});
+</script>
+    
+            <div class="folium-map" id="map_e00699c2feb3469d6fb0ccdd5d6b2e61" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e00699c2feb3469d6fb0ccdd5d6b2e61 = L.map(
+                "map_e00699c2feb3469d6fb0ccdd5d6b2e61",
+                {
+                    center: [48.0, 68.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "minZoom": 5,
+  "maxZoom": 18,
+  "maxBounds": [
+[
+40.0,
+45.0,
+],
+[
+56.0,
+88.0,
+],
+],
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a1916757c90f7ff11290460c6454fa68 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 8,
+  "maxNativeZoom": 8,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var tile_layer_1f89498941722a0f6cab8e16008e6f36 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 13,
+  "maxNativeZoom": 13,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var tile_layer_ccd70d0ab41ca979a8ec4e1961b5353e = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ccd70d0ab41ca979a8ec4e1961b5353e.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var tile_layer_477d4737f385ca95aaad358602e52aa2 = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 17,
+  "maxNativeZoom": 17,
+  "noWrap": false,
+  "attribution": "Map data: \u0026copy; OpenStreetMap contributors, SRTM | Map style: \u0026copy; OpenTopoMap (CC-BY-SA)",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var tile_layer_8de70a0a7b3a44313917331342bfb223 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {
+  "minZoom": 0,
+  "maxZoom": 21,
+  "maxNativeZoom": 21,
+  "noWrap": false,
+  "attribution": "Google",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var tile_layer_0b82f271baa493e041877ae9ecfc6552 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 17,
+  "maxNativeZoom": 17,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0b82f271baa493e041877ae9ecfc6552.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_eb5d7f945d15cb28bc10defc3e864548 = L.marker(
+                [49.2555, 59.943079999999995],
+                {
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var icon_fbb58583f1e3950750925e03f5373197 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_eb5d7f945d15cb28bc10defc3e864548.setIcon(icon_fbb58583f1e3950750925e03f5373197);
+            
+    
+            var marker_bd639d2279128194743b1925e326e853 = L.marker(
+                [49.2556, 59.9431],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var div_icon_4b0c9e1f3dd505d7305eec74086e5541 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AB31\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_bd639d2279128194743b1925e326e853.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Акбулак (ABKAR)</b><br>Сейсмометр, тип: <b>KS 54000</b><br>Над уровнем моря: <b>233</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd639d2279128194743b1925e326e853.setIcon(div_icon_4b0c9e1f3dd505d7305eec74086e5541);
+            
+    
+            var marker_986fe3beed885ba42e1964dd412bc4d3 = L.marker(
+                [49.2556, 59.9431],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var div_icon_a716bc3c099c78d5666e1dee6f5ee78c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AB01\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_986fe3beed885ba42e1964dd412bc4d3.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Акбулак (ABKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>233</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_986fe3beed885ba42e1964dd412bc4d3.setIcon(div_icon_a716bc3c099c78d5666e1dee6f5ee78c);
+            
+    
+            var marker_50c331f766d84e17e3d42207003a66fa = L.marker(
+                [49.2591, 59.9466],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var div_icon_499b22136a589cff94d146dab6998f26 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AB02\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_50c331f766d84e17e3d42207003a66fa.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Акбулак (ABKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>230</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50c331f766d84e17e3d42207003a66fa.setIcon(div_icon_499b22136a589cff94d146dab6998f26);
+            
+    
+            var marker_18f314cd4754995f254862b73b70cb19 = L.marker(
+                [49.2511, 59.9431],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var div_icon_ded48187e16d017c3ea438ae1c11281d = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AB03\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_18f314cd4754995f254862b73b70cb19.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Акбулак (ABKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>234</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18f314cd4754995f254862b73b70cb19.setIcon(div_icon_ded48187e16d017c3ea438ae1c11281d);
+            
+    
+            var marker_e3da7cc14dfce3690f8099e8c8b67239 = L.marker(
+                [49.2578, 59.9371],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var div_icon_751fa8fad4b5e20567d7829d8c92e14b = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AB04\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_e3da7cc14dfce3690f8099e8c8b67239.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Акбулак (ABKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>236</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e3da7cc14dfce3690f8099e8c8b67239.setIcon(div_icon_751fa8fad4b5e20567d7829d8c92e14b);
+            
+    
+            var marker_0c4c6dc999058bdaa282fbaef3f26b93 = L.marker(
+                [49.2736, 59.9431],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var div_icon_d6e8b93653eff3b193a961c889349595 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AB05\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_0c4c6dc999058bdaa282fbaef3f26b93.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Акбулак (ABKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>239</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c4c6dc999058bdaa282fbaef3f26b93.setIcon(div_icon_d6e8b93653eff3b193a961c889349595);
+            
+    
+            var marker_468578151150acd96e031f166a77db7e = L.marker(
+                [49.2611, 59.9693],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var div_icon_daeaac4a92808beeb7d4a401e1b07788 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AB06\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_468578151150acd96e031f166a77db7e.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Акбулак (ABKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>231</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_468578151150acd96e031f166a77db7e.setIcon(div_icon_daeaac4a92808beeb7d4a401e1b07788);
+            
+    
+            var marker_99fc34ab8a9e217822179dc565a723e5 = L.marker(
+                [49.241, 59.9593],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var div_icon_c1f2337760f2233a56690cc1507b00eb = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AB07\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_99fc34ab8a9e217822179dc565a723e5.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Акбулак (ABKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>230</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_99fc34ab8a9e217822179dc565a723e5.setIcon(div_icon_c1f2337760f2233a56690cc1507b00eb);
+            
+    
+            var marker_91c2e4cbc4dec38159a2c91fbc45a597 = L.marker(
+                [49.2387, 59.928],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var div_icon_b4253e40bb91c03e7b449a5ed5565551 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AB08\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_91c2e4cbc4dec38159a2c91fbc45a597.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Акбулак (ABKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>234</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91c2e4cbc4dec38159a2c91fbc45a597.setIcon(div_icon_b4253e40bb91c03e7b449a5ed5565551);
+            
+    
+            var marker_30b6c44d468e00e350875c7cfce3971e = L.marker(
+                [49.2614, 59.9181],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93);
+        
+    
+            var div_icon_fd59011ffe359a163f1991582c084160 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AB09\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_30b6c44d468e00e350875c7cfce3971e.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Акбулак (ABKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>237</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_30b6c44d468e00e350875c7cfce3971e.setIcon(div_icon_fd59011ffe359a163f1991582c084160);
+            
+    
+            feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var feature_group_7a445b69e883d5bbb70a747a16cd3526 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_882ab05ea9db27de942819b63f09eba0 = L.marker(
+                [50.4348, 58.0164],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_7a445b69e883d5bbb70a747a16cd3526);
+        
+    
+            var div_icon_446063b3dae1427fe70c43a9faa99435 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            AKTO\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_882ab05ea9db27de942819b63f09eba0.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Актюбинск (AS059 AKTO)</b><br>Сейсмометр, тип: <b>CMG-3TB</b><br>Над уровнем моря: <b>380</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_882ab05ea9db27de942819b63f09eba0.setIcon(div_icon_446063b3dae1427fe70c43a9faa99435);
+            
+    
+            var marker_fd394c25e421fa4a34dbcb26fecb38d2 = L.marker(
+                [43.2171, 76.9671],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_7a445b69e883d5bbb70a747a16cd3526);
+        
+    
+            var div_icon_a62ae5e7caf9046a27bd43503b5dcad1 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KNDC\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_fd394c25e421fa4a34dbcb26fecb38d2.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>KNDC (KNDC)</b><br>Сейсмометр, тип: <b>STS2</b><br>Над уровнем моря: <b>1006</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd394c25e421fa4a34dbcb26fecb38d2.setIcon(div_icon_a62ae5e7caf9046a27bd43503b5dcad1);
+            
+    
+            var marker_2a4559992a0530b7e50d69603456fa43 = L.marker(
+                [48.2443, 72.3375],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_7a445b69e883d5bbb70a747a16cd3526);
+        
+    
+            var div_icon_7971358a83378f978813962e5d15b6d9 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            OTUK\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_2a4559992a0530b7e50d69603456fa43.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Ортау (OTUK)</b><br>Сейсмометр, тип: <b>CMG-3ESPC, CMG-5T</b><br>Над уровнем моря: <b>750</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a4559992a0530b7e50d69603456fa43.setIcon(div_icon_7971358a83378f978813962e5d15b6d9);
+            
+    
+            var marker_d5ddec3f343b8ee83e285a597745134c = L.marker(
+                [43.3276, 79.4849],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_7a445b69e883d5bbb70a747a16cd3526);
+        
+    
+            var div_icon_52a1edaa26f130926f4be4340f754021 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            PDGK\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_d5ddec3f343b8ee83e285a597745134c.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Подгорное (PDGK)</b><br>Сейсмометр, тип: <b>Trillium Compact Titan</b><br>Над уровнем моря: <b>1290</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5ddec3f343b8ee83e285a597745134c.setIcon(div_icon_52a1edaa26f130926f4be4340f754021);
+            
+    
+            var marker_8b8c2f8e7c33db26f101a718203d9a19 = L.marker(
+                [43.2178, 76.6414],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_7a445b69e883d5bbb70a747a16cd3526);
+        
+    
+            var div_icon_20a64a743274ee71dddc0c05d114d279 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KASK\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_8b8c2f8e7c33db26f101a718203d9a19.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каскелен (KASK)</b><br>Сейсмометр, тип: <b>CMG-5TC</b><br>Над уровнем моря: <b>795</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b8c2f8e7c33db26f101a718203d9a19.setIcon(div_icon_20a64a743274ee71dddc0c05d114d279);
+            
+    
+            var marker_5301109a0960babdda37aeb3d3a8e9af = L.marker(
+                [53.0461, 70.3184],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_7a445b69e883d5bbb70a747a16cd3526);
+        
+    
+            var div_icon_1d733623b5b3d734aeaabd872fc782aa = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BORK\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_5301109a0960babdda37aeb3d3a8e9af.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (BORK)</b><br>Сейсмометр, тип: <b>STS-5, STS-6, Episensor</b><br>Над уровнем моря: <b>334</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5301109a0960babdda37aeb3d3a8e9af.setIcon(div_icon_1d733623b5b3d734aeaabd872fc782aa);
+            
+    
+            var marker_730242ef5b31f80cc73cdfcb37e2893a = L.marker(
+                [50.7154, 78.6202],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_7a445b69e883d5bbb70a747a16cd3526);
+        
+    
+            var div_icon_87a45a2006b45d06653db225e443bebf = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KURK\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_730242ef5b31f80cc73cdfcb37e2893a.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов (KURK)</b><br>Сейсмометр, тип: <b>STS-5, STS-6, Episensor ES-T</b><br>Над уровнем моря: <b>184</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_730242ef5b31f80cc73cdfcb37e2893a.setIcon(div_icon_87a45a2006b45d06653db225e443bebf);
+            
+    
+            var marker_ea1c4c785c069049786d3f5330473e2c = L.marker(
+                [46.808, 81.977],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_7a445b69e883d5bbb70a747a16cd3526);
+        
+    
+            var div_icon_b9aa4723e4f489f989a4419f32198308 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MAKZ\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_ea1c4c785c069049786d3f5330473e2c.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MAKZ)</b><br>Сейсмометр, тип: <b>STS2, Episensor</b><br>Над уровнем моря: <b>600</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea1c4c785c069049786d3f5330473e2c.setIcon(div_icon_b9aa4723e4f489f989a4419f32198308);
+            
+    
+            feature_group_7a445b69e883d5bbb70a747a16cd3526.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var feature_group_88cf93fefab50576184f9808373c7373 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_a9c8ce9ffda3d3af25b0bcde749881d2 = L.marker(
+                [43.10525, 70.50726999999999],
+                {
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var icon_50d908c330a615c11a5f10a91317d69d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_a9c8ce9ffda3d3af25b0bcde749881d2.setIcon(icon_50d908c330a615c11a5f10a91317d69d);
+            
+    
+            var marker_bce0a4f6383824e3918d55bef013ff9a = L.marker(
+                [43.1034, 70.5115],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var div_icon_8cc29f10ca83c3bc31f56d7b77314e5d = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KK31\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_bce0a4f6383824e3918d55bef013ff9a.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каратау (KKAR)</b><br>Сейсмометр, тип: <b>KS 54000</b><br>Над уровнем моря: <b>521</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bce0a4f6383824e3918d55bef013ff9a.setIcon(div_icon_8cc29f10ca83c3bc31f56d7b77314e5d);
+            
+    
+            var marker_5962f8a71f28da033fa3b31354ac869b = L.marker(
+                [43.1054, 70.5061],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var div_icon_83004696889b9268fcb3e6c1f5a707b0 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KK01\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_5962f8a71f28da033fa3b31354ac869b.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каратау (KKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>525</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5962f8a71f28da033fa3b31354ac869b.setIcon(div_icon_83004696889b9268fcb3e6c1f5a707b0);
+            
+    
+            var marker_099692161bee6eea55b08b4ed0db89d3 = L.marker(
+                [43.1034, 70.5115],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var div_icon_f997c3b822a5fbb893482dc73696d705 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KK02\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_099692161bee6eea55b08b4ed0db89d3.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каратау (KKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>521</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_099692161bee6eea55b08b4ed0db89d3.setIcon(div_icon_f997c3b822a5fbb893482dc73696d705);
+            
+    
+            var marker_d8694875cb101419f87551dbfb0d224c = L.marker(
+                [43.1028, 70.5012],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var div_icon_d7b91f7581c806768fbe8b863dc5d998 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KK03\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_d8694875cb101419f87551dbfb0d224c.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каратау (KKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>529</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d8694875cb101419f87551dbfb0d224c.setIcon(div_icon_d7b91f7581c806768fbe8b863dc5d998);
+            
+    
+            var marker_17656819775d6430ef2e15269fcbe97c = L.marker(
+                [43.1098, 70.506],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var div_icon_8c781c3352cad9c2a5c40264f6bcc1a4 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KK04\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_17656819775d6430ef2e15269fcbe97c.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каратау (KKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>523</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17656819775d6430ef2e15269fcbe97c.setIcon(div_icon_8c781c3352cad9c2a5c40264f6bcc1a4);
+            
+    
+            var marker_10b6cf21725cb3767f29a4ddfb6e847b = L.marker(
+                [43.117, 70.5235],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var div_icon_970c75c22ada3a7df80c2a398fd262dc = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KK05\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_10b6cf21725cb3767f29a4ddfb6e847b.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каратау (KKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>510</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10b6cf21725cb3767f29a4ddfb6e847b.setIcon(div_icon_970c75c22ada3a7df80c2a398fd262dc);
+            
+    
+            var marker_c88884e290b0c7f168f8fa7151d7034e = L.marker(
+                [43.0944, 70.5255],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var div_icon_9c0a939067d7a2db30ad55ad7faa315f = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KK06\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_c88884e290b0c7f168f8fa7151d7034e.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каратау (KKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>534</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c88884e290b0c7f168f8fa7151d7034e.setIcon(div_icon_9c0a939067d7a2db30ad55ad7faa315f);
+            
+    
+            var marker_0d7ed36133b917245f934bccd056916f = L.marker(
+                [43.0891, 70.5008],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var div_icon_3b02c658d375d13f71d516d94986c197 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KK07\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_0d7ed36133b917245f934bccd056916f.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каратау (KKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>526</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0d7ed36133b917245f934bccd056916f.setIcon(div_icon_3b02c658d375d13f71d516d94986c197);
+            
+    
+            var marker_2e201f9244f09ad09604adbae13a6b71 = L.marker(
+                [43.1048, 70.4871],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var div_icon_e8416b6450d658bc36c40c07d74257f2 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KK08\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_2e201f9244f09ad09604adbae13a6b71.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каратау (KKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>543</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2e201f9244f09ad09604adbae13a6b71.setIcon(div_icon_e8416b6450d658bc36c40c07d74257f2);
+            
+    
+            var marker_f9ba16fcad2f62720cdb44be2b4e5550 = L.marker(
+                [43.1224, 70.4995],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_88cf93fefab50576184f9808373c7373);
+        
+    
+            var div_icon_0e41e6a7d1abcbe41db18c59bcbabc5c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KK09\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_f9ba16fcad2f62720cdb44be2b4e5550.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Каратау (KKAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>546</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f9ba16fcad2f62720cdb44be2b4e5550.setIcon(div_icon_0e41e6a7d1abcbe41db18c59bcbabc5c);
+            
+    
+            feature_group_88cf93fefab50576184f9808373c7373.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var feature_group_35656033e2c8248f0f506774f99613d0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_53a97d484fc91986a7722430f02cdc87 = L.marker(
+                [46.77233, 82.29796],
+                {
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var icon_db590a379b74b029544cf154e50c3475 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_53a97d484fc91986a7722430f02cdc87.setIcon(icon_db590a379b74b029544cf154e50c3475);
+            
+    
+            var marker_571ceeb314ee8004bb1d3f481ed68161 = L.marker(
+                [46.7937, 82.2904],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var div_icon_8e022f5c3568cecb490bbc9a68eb95eb = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MK31\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_571ceeb314ee8004bb1d3f481ed68161.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKAR PS23)</b><br>Сейсмометр, тип: <b>CMG-3TB</b><br>Над уровнем моря: <b>615</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_571ceeb314ee8004bb1d3f481ed68161.setIcon(div_icon_8e022f5c3568cecb490bbc9a68eb95eb);
+            
+    
+            var marker_d9649740bee36d64f9de965487371297 = L.marker(
+                [46.77, 82.3003],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var div_icon_26fd0fa68c7171ccf0f5dc991c087020 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MK01\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_d9649740bee36d64f9de965487371297.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKAR PS23)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>609</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9649740bee36d64f9de965487371297.setIcon(div_icon_26fd0fa68c7171ccf0f5dc991c087020);
+            
+    
+            var marker_2dbeed114fa4473f2c1ce93c69be8e28 = L.marker(
+                [46.7694, 82.3086],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var div_icon_0a1dfd385d0ff116ddb6eb9ef5c0fa36 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MK02\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_2dbeed114fa4473f2c1ce93c69be8e28.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKAR PS23)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>639</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2dbeed114fa4473f2c1ce93c69be8e28.setIcon(div_icon_0a1dfd385d0ff116ddb6eb9ef5c0fa36);
+            
+    
+            var marker_5dd342c188b2efa49da907c037f5032b = L.marker(
+                [46.7656, 82.3015],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var div_icon_6d615fe95f66cdc352e248b11d8fa83e = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MK03\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_5dd342c188b2efa49da907c037f5032b.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKAR PS23)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>631</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5dd342c188b2efa49da907c037f5032b.setIcon(div_icon_6d615fe95f66cdc352e248b11d8fa83e);
+            
+    
+            var marker_42c8c5303ecc695bd1b3aad18696bed5 = L.marker(
+                [46.7715, 82.2951],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var div_icon_d157e793af3dda2e76413694626e5598 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MK04\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_42c8c5303ecc695bd1b3aad18696bed5.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKAR PS23)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>590</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42c8c5303ecc695bd1b3aad18696bed5.setIcon(div_icon_d157e793af3dda2e76413694626e5598);
+            
+    
+            var marker_9bac376d6533b0396d853424e75f925e = L.marker(
+                [46.7937, 82.2913],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var div_icon_eca684594dea2bc8f1c9394c61893b51 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MK05\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_9bac376d6533b0396d853424e75f925e.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKAR PS23)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>615</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9bac376d6533b0396d853424e75f925e.setIcon(div_icon_eca684594dea2bc8f1c9394c61893b51);
+            
+    
+            var marker_0bab68dbacc147f83d435568f8483bcc = L.marker(
+                [46.7751, 82.3133],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var div_icon_6db04053e465fe8536fb9c412b41a696 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MK06\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_0bab68dbacc147f83d435568f8483bcc.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKAR PS23)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>638</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bab68dbacc147f83d435568f8483bcc.setIcon(div_icon_6db04053e465fe8536fb9c412b41a696);
+            
+    
+            var marker_e2a7cfbfc4f99cf60aeac14e022a8d4f = L.marker(
+                [46.7538, 82.3156],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var div_icon_c70c0e0f19c6a83e7f6910347a2722e7 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MK07\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_e2a7cfbfc4f99cf60aeac14e022a8d4f.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKAR PS23)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>628</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e2a7cfbfc4f99cf60aeac14e022a8d4f.setIcon(div_icon_c70c0e0f19c6a83e7f6910347a2722e7);
+            
+    
+            var marker_3574b1b068d8124e96b859ed2cd08259 = L.marker(
+                [46.7561, 82.2866],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var div_icon_18bc7dc0b2620f44aa71126ec7163862 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MK08\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_3574b1b068d8124e96b859ed2cd08259.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKAR PS23)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>608</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3574b1b068d8124e96b859ed2cd08259.setIcon(div_icon_18bc7dc0b2620f44aa71126ec7163862);
+            
+    
+            var marker_1979b2665fe95a9ffb494a4e17ec501f = L.marker(
+                [46.7744, 82.2769],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_35656033e2c8248f0f506774f99613d0);
+        
+    
+            var div_icon_e1c18b70df32009022ffe5bb1e037c31 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            MK09\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_1979b2665fe95a9ffb494a4e17ec501f.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKAR PS23)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>580</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1979b2665fe95a9ffb494a4e17ec501f.setIcon(div_icon_e1c18b70df32009022ffe5bb1e037c31);
+            
+    
+            feature_group_35656033e2c8248f0f506774f99613d0.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var feature_group_7c8f606dab9839f052165152785b23be = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b7915441c54e70f92d3b725915b9abb1 = L.marker(
+                [50.62269523809524, 78.53045238095238],
+                {
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var icon_1542fcbc0eadc54e4faa7cfc9da7fcc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_b7915441c54e70f92d3b725915b9abb1.setIcon(icon_1542fcbc0eadc54e4faa7cfc9da7fcc4);
+            
+    
+            var marker_905016f09d61ae5b106ccafc4acaafea = L.marker(
+                [50.6226, 78.5304],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_21b1731d4f6cb7a98e5a64ff38ee9025 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KURBB\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_905016f09d61ae5b106ccafc4acaafea.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3TB</b><br>Над уровнем моря: <b>200</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_905016f09d61ae5b106ccafc4acaafea.setIcon(div_icon_21b1731d4f6cb7a98e5a64ff38ee9025);
+            
+    
+            var marker_084d0586d05b12b045fe0352054ff55d = L.marker(
+                [50.7216, 78.5634],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_e0fce6f64dc3cc7468be2b195538bc1a = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR01\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_084d0586d05b12b045fe0352054ff55d.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>165</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_084d0586d05b12b045fe0352054ff55d.setIcon(div_icon_e0fce6f64dc3cc7468be2b195538bc1a);
+            
+    
+            var marker_89f5027558b428db4ca18cacaf75e167 = L.marker(
+                [50.7017, 78.5566],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_184cdad2a1ff3a6bfdfc56c32723249c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR02\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_89f5027558b428db4ca18cacaf75e167.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>169</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89f5027558b428db4ca18cacaf75e167.setIcon(div_icon_184cdad2a1ff3a6bfdfc56c32723249c);
+            
+    
+            var marker_53ffbb9e279cc33a478d2ade7f028892 = L.marker(
+                [50.682, 78.55],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_6e0ab7111ab0f9eb5656a65533fa590e = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR03\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_53ffbb9e279cc33a478d2ade7f028892.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>175</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_53ffbb9e279cc33a478d2ade7f028892.setIcon(div_icon_6e0ab7111ab0f9eb5656a65533fa590e);
+            
+    
+            var marker_bfb1825dc24307467563fb1e67cf0ee8 = L.marker(
+                [50.6622, 78.5434],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_3191bddefc7645d19d2a5d06ecd00014 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR04\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_bfb1825dc24307467563fb1e67cf0ee8.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>177</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bfb1825dc24307467563fb1e67cf0ee8.setIcon(div_icon_3191bddefc7645d19d2a5d06ecd00014);
+            
+    
+            var marker_3097f4507155e0d6726fcd62137d1262 = L.marker(
+                [50.6424, 78.5366],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_df23c5f114a61e05bbd493a2f21265a2 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR05\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_3097f4507155e0d6726fcd62137d1262.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>183</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3097f4507155e0d6726fcd62137d1262.setIcon(div_icon_df23c5f114a61e05bbd493a2f21265a2);
+            
+    
+            var marker_6fd2cd622daf10644b4575ad8a7484aa = L.marker(
+                [50.6028, 78.5239],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_82e8e79355f69c0b1451e86e94649cae = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR06\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_6fd2cd622daf10644b4575ad8a7484aa.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>196</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6fd2cd622daf10644b4575ad8a7484aa.setIcon(div_icon_82e8e79355f69c0b1451e86e94649cae);
+            
+    
+            var marker_021d448afee5cfed6515cee796da27b2 = L.marker(
+                [50.5831, 78.5172],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_29feb20c403096efe090edc90bde1d63 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR07\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_021d448afee5cfed6515cee796da27b2.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>200</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_021d448afee5cfed6515cee796da27b2.setIcon(div_icon_29feb20c403096efe090edc90bde1d63);
+            
+    
+            var marker_b4229e0145204a5f31c7529095e66898 = L.marker(
+                [50.5632, 78.5108],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_50891e42b78d9e9055eb7d1044cb2d72 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR08\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_b4229e0145204a5f31c7529095e66898.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>201</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4229e0145204a5f31c7529095e66898.setIcon(div_icon_50891e42b78d9e9055eb7d1044cb2d72);
+            
+    
+            var marker_3f46dfa1196baa43db0cebc0ce8a2fe6 = L.marker(
+                [50.5433, 78.5043],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_82db5a9bc17008ef96671194996c056d = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR09\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_3f46dfa1196baa43db0cebc0ce8a2fe6.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>201</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f46dfa1196baa43db0cebc0ce8a2fe6.setIcon(div_icon_82db5a9bc17008ef96671194996c056d);
+            
+    
+            var marker_1db6ca015ff352d7e7bbf6ac1e918355 = L.marker(
+                [50.5236, 78.4977],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_b26cad1535887f1e65be398e7f951d3d = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR10\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_1db6ca015ff352d7e7bbf6ac1e918355.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>205</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1db6ca015ff352d7e7bbf6ac1e918355.setIcon(div_icon_b26cad1535887f1e65be398e7f951d3d);
+            
+    
+            var marker_20fd8185fc120a0806d3702d2eb57922 = L.marker(
+                [50.6019, 78.6863],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_0f24602e3a0011f54b110e63b5b6067d = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR11\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_20fd8185fc120a0806d3702d2eb57922.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>202</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_20fd8185fc120a0806d3702d2eb57922.setIcon(div_icon_0f24602e3a0011f54b110e63b5b6067d);
+            
+    
+            var marker_771973c4e5f49def71d00371445d91cf = L.marker(
+                [50.6061, 78.6551],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_27f0f68c0d04f7b54080b697d3a48ce0 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR12\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_771973c4e5f49def71d00371445d91cf.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>204</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_771973c4e5f49def71d00371445d91cf.setIcon(div_icon_27f0f68c0d04f7b54080b697d3a48ce0);
+            
+    
+            var marker_6cfce782d4e1672070075b94da76d504 = L.marker(
+                [50.6102, 78.6242],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_3cf7912323409da8dfc11c8f009616e4 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR13\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_6cfce782d4e1672070075b94da76d504.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>224</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6cfce782d4e1672070075b94da76d504.setIcon(div_icon_3cf7912323409da8dfc11c8f009616e4);
+            
+    
+            var marker_62c1347a48ee36db54f1b2606d2f0e1b = L.marker(
+                [50.6144, 78.5927],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_dc7d9b14150d9c17c9eb9f31239dbcc5 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR14\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_62c1347a48ee36db54f1b2606d2f0e1b.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>217</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_62c1347a48ee36db54f1b2606d2f0e1b.setIcon(div_icon_dc7d9b14150d9c17c9eb9f31239dbcc5);
+            
+    
+            var marker_7dd606c71c5c1312f1f8b7c425bf6a80 = L.marker(
+                [50.6185, 78.5615],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_9fe9b8313aee098fdf9f8a8d097bb378 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR15\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_7dd606c71c5c1312f1f8b7c425bf6a80.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>201</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7dd606c71c5c1312f1f8b7c425bf6a80.setIcon(div_icon_9fe9b8313aee098fdf9f8a8d097bb378);
+            
+    
+            var marker_96ff0df63494c973fe6459fbf27cce70 = L.marker(
+                [50.6269, 78.4993],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_231f8b6538219f8c84e0661bd3cddef2 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR16\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_96ff0df63494c973fe6459fbf27cce70.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>194</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96ff0df63494c973fe6459fbf27cce70.setIcon(div_icon_231f8b6538219f8c84e0661bd3cddef2);
+            
+    
+            var marker_2fc6b48fca52a20b47106645c6720442 = L.marker(
+                [50.6318, 78.469],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_3f75ba499f1d3f5583cd21119f43fa3c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR17\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_2fc6b48fca52a20b47106645c6720442.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>197</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2fc6b48fca52a20b47106645c6720442.setIcon(div_icon_3f75ba499f1d3f5583cd21119f43fa3c);
+            
+    
+            var marker_4548a3bbade114b597b6f4a4fd091980 = L.marker(
+                [50.6353, 78.4368],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_6c0c9e80bd385230bca30d7a158bbb49 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR18\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_4548a3bbade114b597b6f4a4fd091980.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>192</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4548a3bbade114b597b6f4a4fd091980.setIcon(div_icon_6c0c9e80bd385230bca30d7a158bbb49);
+            
+    
+            var marker_532f08360b639932950680db71ce7164 = L.marker(
+                [50.6394, 78.4057],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_bb20084559ee6aa4b2d51cbc238cd3be = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR19\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_532f08360b639932950680db71ce7164.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>182</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_532f08360b639932950680db71ce7164.setIcon(div_icon_bb20084559ee6aa4b2d51cbc238cd3be);
+            
+    
+            var marker_5ecc14641ba3d069a243dcb5b6c97aa4 = L.marker(
+                [50.6436, 78.3746],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_7c8f606dab9839f052165152785b23be);
+        
+    
+            var div_icon_03d4dffebb6f0b3d11a1edd7a1c6a4a2 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            KUR20\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_5ecc14641ba3d069a243dcb5b6c97aa4.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов-Крест (KURK AS058)</b><br>Сейсмометр, тип: <b>CMG-3V</b><br>Над уровнем моря: <b>183</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ecc14641ba3d069a243dcb5b6c97aa4.setIcon(div_icon_03d4dffebb6f0b3d11a1edd7a1c6a4a2);
+            
+    
+            feature_group_7c8f606dab9839f052165152785b23be.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var feature_group_da7d46cd00782eb497fb1945438cb84a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_26e59891add360244f0101c3155405db = L.marker(
+                [53.025710000000004, 70.3877],
+                {
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var icon_8bbe185c3abbd655f096c488083c5172 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_26e59891add360244f0101c3155405db.setIcon(icon_8bbe185c3abbd655f096c488083c5172);
+            
+    
+            var marker_92b6558931bdcd32b65c260702da8b51 = L.marker(
+                [53.0249, 70.3885],
+                {
+  "zIndexOffset": 710,
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var div_icon_19c97fd9df27d736c8573bb3ef26e21a = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid yellow;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BVA0\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 40],
+  "iconAnchor": [20, 20],
+  "className": "empty",
+});
+        
+    
+            marker_92b6558931bdcd32b65c260702da8b51.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (AS057 BVAR)</b><br>Сейсмометр, тип: <b>CMG-3TB</b><br>Над уровнем моря: <b>423</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_92b6558931bdcd32b65c260702da8b51.setIcon(div_icon_19c97fd9df27d736c8573bb3ef26e21a);
+            
+    
+            var marker_c0baf1d4e13fdbe5fbfa2f3bb6d57059 = L.marker(
+                [53.0249, 70.3886],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var div_icon_d22fc083381fbeb3a4ceb2e8b16e1f57 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BVA1\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_c0baf1d4e13fdbe5fbfa2f3bb6d57059.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (AS057 BVAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>422</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0baf1d4e13fdbe5fbfa2f3bb6d57059.setIcon(div_icon_d22fc083381fbeb3a4ceb2e8b16e1f57);
+            
+    
+            var marker_c6e23674f70331bdc5c9900a04c51bae = L.marker(
+                [53.0189, 70.3912],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var div_icon_f997f002996b58fe8586748a4e3bd7cf = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BVA2\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_c6e23674f70331bdc5c9900a04c51bae.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (AS057 BVAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>433</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6e23674f70331bdc5c9900a04c51bae.setIcon(div_icon_f997f002996b58fe8586748a4e3bd7cf);
+            
+    
+            var marker_a047482aaac9ddcfc7871b017a67d9b9 = L.marker(
+                [53.0268, 70.3785],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var div_icon_4564766f694860c3f15556d798ef665f = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BVA3\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_a047482aaac9ddcfc7871b017a67d9b9.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (AS057 BVAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>411</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a047482aaac9ddcfc7871b017a67d9b9.setIcon(div_icon_4564766f694860c3f15556d798ef665f);
+            
+    
+            var marker_0744131985bc15c1098768080e623e96 = L.marker(
+                [53.029, 70.3963],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var div_icon_31852631f1f4fae0e86e3401b1415f12 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BVA4\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_0744131985bc15c1098768080e623e96.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (AS057 BVAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>440</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0744131985bc15c1098768080e623e96.setIcon(div_icon_31852631f1f4fae0e86e3401b1415f12);
+            
+    
+            var marker_edbbf1430b404bf42793f2f1eb5d831e = L.marker(
+                [53.0247, 70.3662],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var div_icon_eef39986fff98d34b3b964c379ec8872 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BVA5\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_edbbf1430b404bf42793f2f1eb5d831e.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (AS057 BVAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>391</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_edbbf1430b404bf42793f2f1eb5d831e.setIcon(div_icon_eef39986fff98d34b3b964c379ec8872);
+            
+    
+            var marker_fcdd6e59496b686d445eeedb2e0a2dff = L.marker(
+                [53.0361, 70.3762],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var div_icon_b619f721fe7d3c18613072dbdf7a073c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BVA6\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_fcdd6e59496b686d445eeedb2e0a2dff.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (AS057 BVAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>403</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fcdd6e59496b686d445eeedb2e0a2dff.setIcon(div_icon_b619f721fe7d3c18613072dbdf7a073c);
+            
+    
+            var marker_52b58b1b3d5e559b59b1c592dc58d8b1 = L.marker(
+                [53.0379, 70.395],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var div_icon_b4fe0d8b65bd7c00bd88647e19a4d264 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BVA7\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_52b58b1b3d5e559b59b1c592dc58d8b1.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (AS057 BVAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>434</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_52b58b1b3d5e559b59b1c592dc58d8b1.setIcon(div_icon_b4fe0d8b65bd7c00bd88647e19a4d264);
+            
+    
+            var marker_d2bcc501f087a26bb5437f6afa9d2d87 = L.marker(
+                [53.0216, 70.4108],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var div_icon_bc3b7f81f32c20de958a9e4ca641beab = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BVA8\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_d2bcc501f087a26bb5437f6afa9d2d87.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (AS057 BVAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>504</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d2bcc501f087a26bb5437f6afa9d2d87.setIcon(div_icon_bc3b7f81f32c20de958a9e4ca641beab);
+            
+    
+            var marker_04d7dda45048ed6c0c7086d8782238fd = L.marker(
+                [53.0123, 70.3857],
+                {
+  "zIndexOffset": 610,
+}
+            ).addTo(feature_group_da7d46cd00782eb497fb1945438cb84a);
+        
+    
+            var div_icon_c9be9d067431a166c2dc0243d500cd62 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        position: relative;\n        width: 0;\n        height: 0;\n        border-left: 12px solid transparent;\n        border-right: 12px solid transparent;\n        border-bottom: 21px solid blue;\n        filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black);\n    \"\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 21px;\n            left: -20px;\n            width: 40px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n            BVA9\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [40, 34],
+  "iconAnchor": [20, 34],
+  "className": "empty",
+});
+        
+    
+            marker_04d7dda45048ed6c0c7086d8782238fd.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Боровое (AS057 BVAR)</b><br>Сейсмометр, тип: <b>GS 21</b><br>Над уровнем моря: <b>414</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_04d7dda45048ed6c0c7086d8782238fd.setIcon(div_icon_c9be9d067431a166c2dc0243d500cd62);
+            
+    
+            feature_group_da7d46cd00782eb497fb1945438cb84a.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var feature_group_7af44019b41506afdfc8ba676a11c5ad = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_19ffd4fac9e18770b057d67301ee2680 = L.marker(
+                [50.406422222222226, 58.03508222222222],
+                {
+}
+            ).addTo(feature_group_7af44019b41506afdfc8ba676a11c5ad);
+        
+    
+            var icon_ace13c22100cb62657f59ab4207374a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_19ffd4fac9e18770b057d67301ee2680.setIcon(icon_ace13c22100cb62657f59ab4207374a7);
+            
+    
+            var marker_dda0bdfc365441cbeffc0eb42fc3092f = L.marker(
+                [50.4069, 58.03485],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_7af44019b41506afdfc8ba676a11c5ad);
+        
+    
+            var div_icon_df05e52de91144d8f69debaeaa0b4b70 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        H1\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_dda0bdfc365441cbeffc0eb42fc3092f.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Актюбинск (IS31 I31KZ)</b><br>Сейсмометр, тип: <b>MB3</b><br>Над уровнем моря: <b>367</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dda0bdfc365441cbeffc0eb42fc3092f.setIcon(div_icon_df05e52de91144d8f69debaeaa0b4b70);
+            
+    
+            var marker_c9b26651938aab010394b5862a678c08 = L.marker(
+                [50.40861, 58.03431],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_7af44019b41506afdfc8ba676a11c5ad);
+        
+    
+            var div_icon_2169303f97a1245937e8721936153345 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        H2\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_c9b26651938aab010394b5862a678c08.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Актюбинск (IS31 I31KZ)</b><br>Сейсмометр, тип: <b>MB3</b><br>Над уровнем моря: <b>367</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c9b26651938aab010394b5862a678c08.setIcon(div_icon_2169303f97a1245937e8721936153345);
+            
+    
+            var marker_89979a152e4d80bd62463498d844fa30 = L.marker(
+                [50.40759, 58.03838],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_7af44019b41506afdfc8ba676a11c5ad);
+        
+    
+            var div_icon_a02ae45fe3cdb496de7cbba601f9d785 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        H3\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_89979a152e4d80bd62463498d844fa30.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Актюбинск (IS31 I31KZ)</b><br>Сейсмометр, тип: <b>MB3</b><br>Над уровнем моря: <b>367</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89979a152e4d80bd62463498d844fa30.setIcon(div_icon_a02ae45fe3cdb496de7cbba601f9d785);
+            
+    
+            var marker_983970e9bb3538307adc4b3038bff975 = L.marker(
+                [50.40496, 58.03688],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_7af44019b41506afdfc8ba676a11c5ad);
+        
+    
+            var div_icon_a08def9c9fe54c41ca203235e60d8e9d = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        H4\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_983970e9bb3538307adc4b3038bff975.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Актюбинск (IS31 I31KZ)</b><br>Сейсмометр, тип: <b>MB3</b><br>Над уровнем моря: <b>368</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_983970e9bb3538307adc4b3038bff975.setIcon(div_icon_a08def9c9fe54c41ca203235e60d8e9d);
+            
+    
+            var marker_ed758db632d13540c802c7ed9b985443 = L.marker(
+                [50.40338, 58.03428],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_7af44019b41506afdfc8ba676a11c5ad);
+        
+    
+            var div_icon_5a3eeccf8ab2deb55f885d6e62c39de2 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        H5\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_ed758db632d13540c802c7ed9b985443.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Актюбинск (IS31 I31KZ)</b><br>Сейсмометр, тип: <b>MB3</b><br>Над уровнем моря: <b>373</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed758db632d13540c802c7ed9b985443.setIcon(div_icon_5a3eeccf8ab2deb55f885d6e62c39de2);
+            
+    
+            var marker_0cf6bffc59cf61cf56cd477c8c951e43 = L.marker(
+                [50.40601, 58.0334],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_7af44019b41506afdfc8ba676a11c5ad);
+        
+    
+            var div_icon_06b038ffb0e7b0d1bc38088c333c9dfd = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        H6\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_0cf6bffc59cf61cf56cd477c8c951e43.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Актюбинск (IS31 I31KZ)</b><br>Сейсмометр, тип: <b>MB3</b><br>Над уровнем моря: <b>369</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0cf6bffc59cf61cf56cd477c8c951e43.setIcon(div_icon_06b038ffb0e7b0d1bc38088c333c9dfd);
+            
+    
+            var marker_64053752a7d8f1c8f4356a69643f0994 = L.marker(
+                [50.41322, 58.04816],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_7af44019b41506afdfc8ba676a11c5ad);
+        
+    
+            var div_icon_7b54221b4e14b1a95d0e9825387313f8 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        H7\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_64053752a7d8f1c8f4356a69643f0994.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Актюбинск (IS31 I31KZ)</b><br>Сейсмометр, тип: <b>MB3</b><br>Над уровнем моря: <b>365</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_64053752a7d8f1c8f4356a69643f0994.setIcon(div_icon_7b54221b4e14b1a95d0e9825387313f8);
+            
+    
+            var marker_12b1b11635eaf1c369f577daaa41b957 = L.marker(
+                [50.39694, 58.03779],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_7af44019b41506afdfc8ba676a11c5ad);
+        
+    
+            var div_icon_24b49448a7ae60b8ae2efa8106ecb8e5 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        H8\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_12b1b11635eaf1c369f577daaa41b957.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Актюбинск (IS31 I31KZ)</b><br>Сейсмометр, тип: <b>MB3</b><br>Над уровнем моря: <b>360</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12b1b11635eaf1c369f577daaa41b957.setIcon(div_icon_24b49448a7ae60b8ae2efa8106ecb8e5);
+            
+    
+            var marker_10fd642a9b4174cac8d214be21583596 = L.marker(
+                [50.41019, 58.01769],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_7af44019b41506afdfc8ba676a11c5ad);
+        
+    
+            var div_icon_a32292f22506855e331b4d963fa19e16 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        H9\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_10fd642a9b4174cac8d214be21583596.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Актюбинск (IS31 I31KZ)</b><br>Сейсмометр, тип: <b>MB3</b><br>Над уровнем моря: <b>372</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10fd642a9b4174cac8d214be21583596.setIcon(div_icon_a32292f22506855e331b4d963fa19e16);
+            
+    
+            feature_group_7af44019b41506afdfc8ba676a11c5ad.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var feature_group_2abc85d370b29a7dc3b340939aa2c1f8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_4d7c32681c742b33b0af06faf4cef19c = L.marker(
+                [50.7139575, 78.6141475],
+                {
+}
+            ).addTo(feature_group_2abc85d370b29a7dc3b340939aa2c1f8);
+        
+    
+            var icon_6e3422e90f8c998e54ab90613a341a74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_4d7c32681c742b33b0af06faf4cef19c.setIcon(icon_6e3422e90f8c998e54ab90613a341a74);
+            
+    
+            var marker_acbfba04c0cafa8153a8b69c6c2d4dd8 = L.marker(
+                [50.71781, 78.61025],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_2abc85d370b29a7dc3b340939aa2c1f8);
+        
+    
+            var div_icon_c62c4e7fc3f74af6b956d3915df2e333 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        KURIS1\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_acbfba04c0cafa8153a8b69c6c2d4dd8.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов (KURIS)</b><br>Сейсмометр, тип: <b>MB2005</b><br>Над уровнем моря: <b>166</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_acbfba04c0cafa8153a8b69c6c2d4dd8.setIcon(div_icon_c62c4e7fc3f74af6b956d3915df2e333);
+            
+    
+            var marker_4fb867174df6d4e0ee2d4ef282f5e60a = L.marker(
+                [50.71003, 78.61069],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_2abc85d370b29a7dc3b340939aa2c1f8);
+        
+    
+            var div_icon_740ac8d008280dccfa910713d4638f06 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        KURIS2\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_4fb867174df6d4e0ee2d4ef282f5e60a.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов (KURIS)</b><br>Сейсмометр, тип: <b>MB2005</b><br>Над уровнем моря: <b>166</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4fb867174df6d4e0ee2d4ef282f5e60a.setIcon(div_icon_740ac8d008280dccfa910713d4638f06);
+            
+    
+            var marker_8c68749a6c176552563b9f1a0b0e578c = L.marker(
+                [50.71397, 78.62138],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_2abc85d370b29a7dc3b340939aa2c1f8);
+        
+    
+            var div_icon_d5dd8b0421f3760fab3c721d97b5be23 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        KURIS3\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_8c68749a6c176552563b9f1a0b0e578c.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов (KURIS)</b><br>Сейсмометр, тип: <b>MB2005</b><br>Над уровнем моря: <b>164</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c68749a6c176552563b9f1a0b0e578c.setIcon(div_icon_d5dd8b0421f3760fab3c721d97b5be23);
+            
+    
+            var marker_599eb3d0030bbc3dc6ec1a616ff1b685 = L.marker(
+                [50.71402, 78.61427],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_2abc85d370b29a7dc3b340939aa2c1f8);
+        
+    
+            var div_icon_1380277d007f984b23d4eb3345b93c5b = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        KURISC\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_599eb3d0030bbc3dc6ec1a616ff1b685.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Курчатов (KURIS)</b><br>Сейсмометр, тип: <b>MB2005</b><br>Над уровнем моря: <b>168</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_599eb3d0030bbc3dc6ec1a616ff1b685.setIcon(div_icon_1380277d007f984b23d4eb3345b93c5b);
+            
+    
+            feature_group_2abc85d370b29a7dc3b340939aa2c1f8.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var feature_group_5d1cd075b2497a32b21c48463f214049 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_7dbb670b0d2b5870728ed64867c61bbb = L.marker(
+                [46.77346666666667, 82.30228888888888],
+                {
+}
+            ).addTo(feature_group_5d1cd075b2497a32b21c48463f214049);
+        
+    
+            var icon_329ff9962d3181b8a04c1b1c948a9b1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_7dbb670b0d2b5870728ed64867c61bbb.setIcon(icon_329ff9962d3181b8a04c1b1c948a9b1e);
+            
+    
+            var marker_bfdee66190a4271327af212b051c68fd = L.marker(
+                [46.7734, 82.3023],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_5d1cd075b2497a32b21c48463f214049);
+        
+    
+            var div_icon_22a942f8785705bfcf395f333d657383 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        MKI51\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_bfdee66190a4271327af212b051c68fd.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKIAR)</b><br>Сейсмометр, тип: <b>Chaparral Physics Model 25</b><br>Над уровнем моря: <b>628</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bfdee66190a4271327af212b051c68fd.setIcon(div_icon_22a942f8785705bfcf395f333d657383);
+            
+    
+            var marker_b9390f688af8c7951d377adb3bf206a5 = L.marker(
+                [46.7738, 82.3035],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_5d1cd075b2497a32b21c48463f214049);
+        
+    
+            var div_icon_36ce0ff879f21c8249efe7261170713f = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        MKI52\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_b9390f688af8c7951d377adb3bf206a5.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKIAR)</b><br>Сейсмометр, тип: <b>Chaparral Physics Model 25</b><br>Над уровнем моря: <b>631</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b9390f688af8c7951d377adb3bf206a5.setIcon(div_icon_36ce0ff879f21c8249efe7261170713f);
+            
+    
+            var marker_3abd812b07ed3e63ec2d6fc3823858b7 = L.marker(
+                [46.7727, 82.3023],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_5d1cd075b2497a32b21c48463f214049);
+        
+    
+            var div_icon_1249de8de457a442e62e2b7de5d43e11 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        MKI53\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_3abd812b07ed3e63ec2d6fc3823858b7.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKIAR)</b><br>Сейсмометр, тип: <b>Chaparral Physics Model 25</b><br>Над уровнем моря: <b>622</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3abd812b07ed3e63ec2d6fc3823858b7.setIcon(div_icon_1249de8de457a442e62e2b7de5d43e11);
+            
+    
+            var marker_c77d5bcca0b8f7d9a904cc48ba49be71 = L.marker(
+                [46.7738, 82.3012],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_5d1cd075b2497a32b21c48463f214049);
+        
+    
+            var div_icon_7ec8919b11ac4f2368c038a0ac76e48a = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        MKI54\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_c77d5bcca0b8f7d9a904cc48ba49be71.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKIAR)</b><br>Сейсмометр, тип: <b>Chaparral Physics Model 25</b><br>Над уровнем моря: <b>625</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c77d5bcca0b8f7d9a904cc48ba49be71.setIcon(div_icon_7ec8919b11ac4f2368c038a0ac76e48a);
+            
+    
+            var marker_05f35390e3dcd9c840f84c89d6b1768b = L.marker(
+                [46.7694, 82.3015],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_5d1cd075b2497a32b21c48463f214049);
+        
+    
+            var div_icon_8aa06e0a97dd03ac5d7d901dd2b0bf7e = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        MKI55\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_05f35390e3dcd9c840f84c89d6b1768b.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKIAR)</b><br>Сейсмометр, тип: <b>Chaparral Physics Model 25</b><br>Над уровнем моря: <b>599</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05f35390e3dcd9c840f84c89d6b1768b.setIcon(div_icon_8aa06e0a97dd03ac5d7d901dd2b0bf7e);
+            
+    
+            var marker_6fd6fbd0e92eea7b9925330f60b84e0f = L.marker(
+                [46.7718, 82.2964],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_5d1cd075b2497a32b21c48463f214049);
+        
+    
+            var div_icon_dbd19f8ff4919db1ffdbee8119220eff = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        MKI56\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_6fd6fbd0e92eea7b9925330f60b84e0f.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKIAR)</b><br>Сейсмометр, тип: <b>Chaparral Physics Model 25</b><br>Над уровнем моря: <b>628</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6fd6fbd0e92eea7b9925330f60b84e0f.setIcon(div_icon_dbd19f8ff4919db1ffdbee8119220eff);
+            
+    
+            var marker_1f6a3eaabbabf5d81b79aaf9f4f70b3c = L.marker(
+                [46.7771, 82.2989],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_5d1cd075b2497a32b21c48463f214049);
+        
+    
+            var div_icon_37e10da436fa12729177b5a8ae19c152 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        MKI57\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_1f6a3eaabbabf5d81b79aaf9f4f70b3c.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKIAR)</b><br>Сейсмометр, тип: <b>Chaparral Physics Model 25</b><br>Над уровнем моря: <b>631</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f6a3eaabbabf5d81b79aaf9f4f70b3c.setIcon(div_icon_37e10da436fa12729177b5a8ae19c152);
+            
+    
+            var marker_095ab92e80eec373f23ae8563aadaa64 = L.marker(
+                [46.7773, 82.3063],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_5d1cd075b2497a32b21c48463f214049);
+        
+    
+            var div_icon_c64a172794b810a9061f6bfdb5a91a68 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        MKI58\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_095ab92e80eec373f23ae8563aadaa64.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKIAR)</b><br>Сейсмометр, тип: <b>Chaparral Physics Model 25</b><br>Над уровнем моря: <b>660</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_095ab92e80eec373f23ae8563aadaa64.setIcon(div_icon_c64a172794b810a9061f6bfdb5a91a68);
+            
+    
+            var marker_01240fa7ad2d8ddb8061eec64355aec3 = L.marker(
+                [46.7719, 82.3082],
+                {
+  "zIndexOffset": 510,
+}
+            ).addTo(feature_group_5d1cd075b2497a32b21c48463f214049);
+        
+    
+            var div_icon_e568b305993a43193be8ca21db2db510 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"position: relative; width: 40px; height: 40px;\"\u003e\n        \u003cdiv style=\"\n            width: 100%;\n            height: 100%;\n            filter: drop-shadow(1px 0px 0px black) \n                    drop-shadow(-1px 0px 0px black) \n                    drop-shadow(0px 1px 0px black) \n                    drop-shadow(0px -1px 0px black);\n        \"\u003e\n            \u003cdiv style=\"\n                width: 100%;\n                height: 100%;\n                background-color: red;\n                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);\n            \"\u003e\u003c/div\u003e\n        \u003c/div\u003e\n        \u003cdiv style=\"\n            position: absolute;\n            top: 38px;\n            left: 50%;\n            transform: translateX(-50%);\n            width: 60px;\n            text-align: center;\n            font-size: 12px;\n            color: #d0d0ff;\n            font-weight: bold;\n            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;\n        \"\u003e\n        MKI59\n        \u003c/div\u003e\n    \u003c/div\u003e\n    ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+        
+    
+            marker_01240fa7ad2d8ddb8061eec64355aec3.bindTooltip(
+                `<div>
+                     <span style="font-size: 14px;"><b>Маканчи (MKIAR)</b><br>Сейсмометр, тип: <b>Chaparral Physics Model 25</b><br>Над уровнем моря: <b>601</b></span>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01240fa7ad2d8ddb8061eec64355aec3.setIcon(div_icon_e568b305993a43193be8ca21db2db510);
+            
+    
+            feature_group_5d1cd075b2497a32b21c48463f214049.addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+        
+    
+            var layer_control_da747c446814f75874dda32bf35db689_layers = {
+                base_layers : {
+                    "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f" : tile_layer_a1916757c90f7ff11290460c6454fa68,
+                    "Shaded Relief" : tile_layer_1f89498941722a0f6cab8e16008e6f36,
+                    "\u0422\u043e\u043f\u043e\u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u0430\u044f" : tile_layer_477d4737f385ca95aaad358602e52aa2,
+                    "Google Satellite" : tile_layer_8de70a0a7b3a44313917331342bfb223,
+                    "Esri World Imagery " : tile_layer_0b82f271baa493e041877ae9ecfc6552,
+                },
+                overlays :  {
+                    "\u0413\u0440\u0430\u043d\u0438\u0446\u044b \u0438 \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u044f" : tile_layer_ccd70d0ab41ca979a8ec4e1961b5353e,
+                    "ABKAR" : feature_group_d3c8fc8938d79ffd7f33dd3bb414ed93,
+                    "stand_alone" : feature_group_7a445b69e883d5bbb70a747a16cd3526,
+                    "KKAR" : feature_group_88cf93fefab50576184f9808373c7373,
+                    "MKAR" : feature_group_35656033e2c8248f0f506774f99613d0,
+                    "KURK" : feature_group_7c8f606dab9839f052165152785b23be,
+                    "BVAR" : feature_group_da7d46cd00782eb497fb1945438cb84a,
+                    "I31KZ" : feature_group_7af44019b41506afdfc8ba676a11c5ad,
+                    "KURIS" : feature_group_2abc85d370b29a7dc3b340939aa2c1f8,
+                    "MKIAR" : feature_group_5d1cd075b2497a32b21c48463f214049,
+                },
+            };
+            let layer_control_da747c446814f75874dda32bf35db689 = L.control.layers(
+                layer_control_da747c446814f75874dda32bf35db689_layers.base_layers,
+                layer_control_da747c446814f75874dda32bf35db689_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_e00699c2feb3469d6fb0ccdd5d6b2e61);
+
+        
+</script>
+</html>
